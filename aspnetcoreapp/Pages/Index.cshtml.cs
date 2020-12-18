@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,9 +17,10 @@ namespace aspnetcoreapp.Pages
             _logger = logger;
         }
 
+        public string Time {get; set;}
         public void OnGet()
         {
-
+            Time = DateTime.Now.ToShortTimeString();
         }
     }
 }
